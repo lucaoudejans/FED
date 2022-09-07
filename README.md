@@ -56,30 +56,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Mijn bevindingen van slecht zicht:
+    - Het rechter zicht werd geblokkeerd
+    - Mijn hoofd moet ik iets draaien om de winkel knop rechts boven te kunnen zien
+    - 99% van de site is goed te zien
+    - De site is goed te gebruiken met slecht zicht
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  De voice over op mijn mac heb ik gebruikt als screen reader. 
+  Toen ik het aan het gebruiken was, kwam ik er gelijk al achter dat niet alles werd opgelezen, bijvoorbeeld de buttons (winkelwagen button). Naast dat hij niet alles oplas, werden er ook onnodige dingen opgelezen (link, 0). 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De screenreader kan je bevorderen door een betere semantische code. De onnodige teksten eruit halen en headings, sections, paragraven, lists etc gebruiken.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Toen ik de website probeerde te gebruiken met alleen tab, shift, enter en pijltjes toetsen kwam ik er al snel achter dat dit bijna niet ging. Van boven naar beneden ging goed. Echter lukte het niet om de header te gebruiken (menu, bestellen, winkelwagen). 
+  Toen ik naar de volgende pagina kwam, lukte het wel om de header te gebruiken. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Zorgen dat de header te gebruiken is op de homepage. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik heb elastiekjes gebruikt om mijn wijs en middelvinger aan elkaar vast te 'plakken'. Ik kreeg gelijk door dat het moeilijker met scrollen is, dus het wel belangrijk is dat je ook knoppen daarvoor kan gebruiken. Ook moest ik knoppen aanklikken met een andere vinger. Dit is meer iets want onwennig is. Voorderest is de website wel gewoon goed te gebruiken. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ook heb ik shocks gebruikt. Ik voelde dit vooral in mijn onderarm. Typen werd lastiger maar het lukte wel nog om te scrollen en te klikken. 
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Voor de visuele oefening heb ik mijn laptop op blur gezet. Hierin werd alles wazig en werd het lastiger om teksten te lezen en afbeeldingen te zien.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Niet te kleine teksten/foto's gebruiken op de website.
 
 </details>
 
