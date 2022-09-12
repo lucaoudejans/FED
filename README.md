@@ -97,18 +97,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/homepage1.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/homepage2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bestelpagina.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
-
-
+## Mini-symposium (week 1)
+  Vandaag heb de mini-symposium bijgewoond. De eerste gastcollege werd gegeven door manuel, hij vertelde over toegankelijkheid.
+  Wat mij bij is gebleven van het college:
+    - je kan het goed zelf testen door middel van de tab en enter toetsen
+    - de alt teksten zijn erg belangrijk
+    - je kan dingen benoemen met titels, aria etc.
+    - geef dingen een heading voor shortcuts
+    - voeg shortcuts toe bij lists bijv.
+    - test de site met tab en screencast
+  Het tweede gastcollege werd gegeven door eric. Dit college vond ik vooral goed omdat het zo heel echt werd. De voorbeelden die hij gaf, gaven ineens een heel duidelijk beeld bij het hoorcollege.
 
 
 ## Voortgang 1 (week 2)
