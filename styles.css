@@ -1,37 +1,733 @@
+:root {
+    --header-height: 3em;
+    --background-color: #ee907b;
+    --color: white;
+    --text-color: #285e3e;
+}
+
+/* general */
 *{
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tafel Sans Pro;
     margin: 0;
     padding: 0;
 }
 
+*:focus{
+    outline-color: rgb(88, 55, 55);
+}
 
 img{
-    width: 300px;
+    max-width: 100%;
 }
 
-nav{
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+
+button{
+    cursor: pointer;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Tafel Sans Pro';
+    src: local('Tafel Sans Pro Regular'), local('Tafel-Sans-Pro-Regular'),
+        url('../basiswebsite/webfonts/TafelSansPro-Regular.woff2') format('woff2'),
+        url('../basiswebsite/webfonts/TafelSansPro-Regular.woff') format('woff'),
+        url('../basiswebsite/webfonts/TafelSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Tafel Sans Pro Light';
+    src: local('Tafel Sans Pro Light'), local('Tafel-Sans-Pro-Light'),
+        url('../basiswebsite/webfonts/TafelSansPro-Light.woff2') format('woff2'),
+        url('../basiswebsite/webfonts/TafelSansPro-Light.woff') format('woff'),
+        url('../basiswebsite/webfonts/TafelSansPro-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* code voor de (home) header */    
+header nav{
     display: flex;
+    position: fixed;
     justify-content: space-around;
-    background-color: #EE907B;
-    height: 70px;
+    background-color: transparent;
+    height: var(--header-height);
     min-width: 100%;
+    transition: all 0.3s ease;
+    z-index: 1;
+    height: 3em;
+
 }
 
-nav ul{
+header li > button{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.kleurnav{
+    background-color: var(--background-color);
+    z-index: 1;
+}
+
+.main-nav{
+    align-items: center;
+    position: fixed;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    height: 21em;
+    width: 13em;
+    top: var(--header-height);
+    gap: 3.2em;
+
+    transform: scaleY(0);
+    transition: 1s;
+    transform-origin: 0% 0%;
+}
+
+.toonMenu{
+    transform: scaleY(1);
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+header nav > ul{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1em;
     align-items: center;
-    color: white;
+    color: var(--color);
 }
 
-nav button{
-    color: white;
-    border-color: white;
-    background-color: transparent;
-    padding: 5px;
-    border-radius: 7px;
-    font-size: 1.2em;
+header li{
+    font-family: 'Tafel Sans Pro';
 }
+
+header li:first-of-type i {
+    font-size: 1.5em;
+    color: var(--color);
+    padding-left: 0.5em;
+}
+
+header li:nth-of-type(4) i {
+    font-size: 1.3em;
+    color: var(--color);
+}
+
+h1{
+    font-size: 1.5em;
+    font-family: Didot;
+}
+
+/* extra code voor de (bestel) header */   
+.bestel header nav{
+    background-color: var(--background-color);
+}
+
+/* code van https://codepen.io/shooft/pen/rNdqQdO */
+nav span {
+    position: absolute;
+    top: .4em;
+    right: 0.8em;
+    padding: 0 0.25em;
+    background-color: black;
+    border-radius: 0.625em;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.25em;
+    color: var(--color);
+  }
+
+/* code voor de main */    
+.home section:first-of-type img{
+    width: 100%;
+}
+
+.home h1{
+    text-align: center;
+    color: var(--color);
+    font-family: didot;
+    font-size: 1.6em;
+}
+
+.home section:nth-of-type(1){
+    height: 70vh;
+    display: flex;
+    background-image: url(images/achtergrond.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home section:nth-of-type(1) p{
+    width: 100%;
+    text-align: center;
+    color: var(--color);
+    font-size: 1.2em;
+    font-family: Tafel Sans Pro;
+    letter-spacing: 2px;
+    padding: 1em;
+}
+
+.home section:nth-of-type(1) button{
+    text-align: center;
+    color: var(--color);
+    font-size: 1.125em;
+    font-family: 'Tafel Sans Pro';
+    letter-spacing: 0.85px;
+    background-color: var(--text-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: var(--text-color);
+    border-style: solid;
+}
+
+.home section:nth-of-type(2) h2{
+    margin: 100px auto;
+    text-align: center;
+    color: #285e3e;
+    font-family: lato;
+    font-weight: 100;
+    font-size: 1.8em;
+    width: 80%;
+}
+
+.home section:nth-of-type(3){
+    background-color: var(--background-color);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color);
+}
+
+.home section:nth-of-type(3) h2{
+    text-align: center;
+    font-family: lato;
+    font-weight: 100;
+    font-size: 2.3em;
+}
+
+.home section:nth-of-type(3) p{
+    width: 80%;
+    text-align: center;
+}
+
+.home section:nth-of-type(3) button{
+    text-align: center;
+    color: var(--color);
+    font-size: 1.125em;
+    font-family: 'Tafel Sans Pro', Arial, sans-serif;
+    letter-spacing: 0.85px;
+    background-color: var(--text-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: var(--text-color);
+    border-style: solid;
+}
+
+.home section:nth-of-type(4){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    gap: 2em;
+}
+
+/* grid template regel: https://codepen.io/shooft/pen/vYRjoxG?editors=0110 */
+.home section:nth-of-type(4) ul{
+    margin-bottom: 1.5em;
+    width: 90%;
+    padding: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18em), 1fr));
+    display: grid;
+    gap: 1.5em
+}   
+
+.home section:nth-of-type(4) img{
+    width: 100%;
+}
+
+.home section:nth-of-type(4) h2{
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2.1em;
+    text-align: center;
+    font-family: lato;
+    background-color: #f6f6f6;
+}
+
+.home section:nth-of-type(4) h3{
+    text-align: center;
+    align-items: center;
+    padding-top: 2.5em;
+    color: var(--text-color);
+    font-family: Lato;
+    font-size: 1em;
+    padding-bottom: 4.5em;
+    background-color: var(--color);
+}
+
+.home section:nth-of-type(4) p{
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 1em;
+    height: 1.5em;
+    transform: translateY(50%);
+}
+
+.home section:nth-of-type(5){
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.home section:nth-of-type(5) img{
+    width: 60%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.home section:nth-of-type(5) p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    font-family: Tafel Sans Pro;
+    width: 80%;
+    color: grey;
+}
+
+.home section:nth-of-type(5) p:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+
+.home section:nth-of-type(6) ul{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap: 0.5em;
+    background-color: var(--background-color);
+    padding: 0.5em;
+}
+
+.home section:nth-of-type(6){
+    background-color: var(--background-color);
+    padding-top: 4em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home section:nth-of-type(6) img{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.home section:nth-of-type(6) button{
+    text-align: center;
+    color: var(--color);
+    font-size: 0.8em;
+    font-family: 'Tafel Sans Pro';
+    letter-spacing: 0.85px;
+    background-color: var(--text-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: var(--text-color);
+    border-style: solid;
+}
+
+.home section:nth-of-type(7) section:nth-of-type(1){
+    background-color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 360px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-image: none;
+}
+
+.home section:nth-of-type(7) section:nth-of-type(1) h2{
+        text-align: center;
+        font-family: lato;
+        font-weight: 600;
+        font-size: 1.8em;
+        color: var(--text-color);
+        padding-bottom: 1em;
+}
+
+.home section:nth-of-type(7) section:nth-of-type(1) h3{
+    text-align: center;
+    font-family: lato;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--text-color);
+    padding-bottom: 1em;
+}
+
+.home section:nth-of-type(7) section:nth-of-type(1) p{
+    text-align: center;
+    font-family: Tafel Sans Pro;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: grey;
+    padding-bottom: 1em;
+}
+
+.home section:nth-of-type(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home iframe {
+    width: 100%;
+    height: 50vh;
+    aspect-ratio: 1/1;
+    padding-bottom: 2em; 
+}
+
+.home section:nth-of-type(9) h2{
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    font-size: 2.1em;
+    font-family: lato;
+}
+
+.home details > summary {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+    padding: 1em;
+    color: var(--background-color);
+    height: 100%;
+}
+
+.home details > summary::after {
+	content: "<";
+	margin-left: auto;
+}
+
+.home details[open] > summary::after {
+	transform: rotate(180deg);
+}
+
+.home section:nth-of-type(8){
+    background-color: var(--background-color);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color);
+}
+
+.home section:nth-of-type(8) p{
+    width: 80%;
+    text-align: center;
+}
+
+.home section:nth-of-type(8) button{
+    text-align: center;
+    color: var(--color);
+    font-size: 1.125em;
+    font-family: 'Tafel Sans Pro';
+    letter-spacing: 0.85px;
+    background-color: var(--text-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: var(--text-color);
+    border-style: solid;
+}
+
+.home section:nth-of-type(9){
+    padding-bottom: 2em;
+}
+
+.home section:nth-of-type(9) ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home section:nth-of-type(9) li{
+    width: 90%;
+    font-size: 0.8em;
+    color: grey;
+    padding-bottom: 1em;
+}
+
+.home details hr{
+    margin-left: 1em;
+    margin-right: 1em;
+    border: solid 1px #f6f6f6;
+}
+
+.home section:nth-of-type(9) h2{
+    color: var(--text-color);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+    font-family: lato;
+    text-align: left;
+}
+
+.home section:nth-of-type(9) button{
+    text-align: center;
+    color: var(--color);
+    font-size: 0.8em;
+    font-family: 'Tafel Sans Pro';
+    letter-spacing: 0.85px;
+    background-color: var(--text-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: var(--text-color);
+    border-style: solid;
+    margin-left: 1.5em;
+}
+
+/* code voor de bestel main*/
+main .bestel{
+    top: var(--header-height);
+}
+
+.bestel main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    gap: 2em;
+}
+
+/* code voor de footer */    
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    flex-flow: column;
+}
+
+footer img{
+    width: 60%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    color: var(--color);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    flex-wrap: wrap;
+    gap: 2em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+/* button weghalen wanneer het een mobiel scherm heeft */
+@media (max-width:31em) {
+    .bestel-button{
+      display: none;
+    }
+
+    .bestel :first-of-type>a{
+        display: none;
+    }
+ }
+
+
+/* button hebben wanneer het een desktop is */
+@media (min-width:30em) {
+    .bestel-button{
+        color: var(--color);
+        border-color: var(--color);
+        border-style: solid;
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 7px;
+        font-size: 1.2em;}
+    }
+
+/* site responsive maken */
+@media (min-width:46em) {
+        
+        .home section:nth-of-type(1) {
+        height: 100vh;
+        }
+
+        .home section:nth-of-type(3){
+            height: auto;
+            padding: 60px;
+            display: grid;
+        }
+
+        .home section:nth-of-type(3) p{
+            width: 100%;
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+
+        .home section:nth-of-type(3) button{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            }
+
+        .home section:nth-of-type(5) img{
+            width: 30%;
+        }
+
+        .home section:nth-of-type(6) ul{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .home .maandkoekje{
+            transform: translateY(-5%);
+        }
+
+        .home section:nth-of-type(7){
+            flex-direction: row;
+            height: 53vh;
+        }
+
+        .home iframe {
+            padding-bottom: 0em; 
+        }
+
+        .home section:nth-of-type(8){
+            height: auto;
+            padding: 60px;
+            display: grid;
+        }
+
+        .home sectiont:nth-of-type(8) h2{
+            text-align: center;
+            font-family: lato;
+            font-weight: 100;
+            font-size: 2em;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+
+        .home section:nth-of-type(8) p{
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+
+        .home section:nth-of-type(8) button{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            }
+
+        .home section:nth-of-type(9) h2{
+            font-size: 1.2em;
+            }
+
+        .home section:nth-of-type(9){
+            padding: 1em;
+            padding-bottom: 2em;
+        }
+
+        .home section:nth-of-type(9){
+            display: grid;
+            grid-template-columns: 80% 20;
+            grid-template-columns: 50%;
+        }
+
+        .home section:nth-of-type(9) h2{
+            grid-column-end: 1;
+        }
+
+        .home section:nth-of-type(9) button{
+            grid-column-end: 1;
+        }
+
+        .home section:nth-of-type(9) button{
+            width: 50%;
+        }
+
+        .bestel main ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5em;
+            padding: 1em;
+        }
+
+        footer img{
+            width: 30%;
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+
+        footer ul{
+            width: 100%;
+            gap: 1em;
+            font-size: 0.8em;
+        }
+
+        }
+
+@media (min-width: 55em){
+        .home section:nth-of-type(5) img {
+            width: 25%;
+        }
+        .home section:nth-of-type(7){
+            gap: 10em;
+        }
+
+        header .logo{
+    margin-left: -22em;
+}
+    }

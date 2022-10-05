@@ -125,7 +125,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De eerste week ging goed. Wel moest ik weer wat dingen naar boven halen mbt semantisch correcte code en hoe je wat doet.
+  Waar ik vooral moeite mee had, was met iconen en fonts toevoegen.
 
 
   ### Agenda voor meeting
@@ -141,10 +142,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - flexbox gebruiken zodat het makkelijker wordt
+  - icons gebruiken voor de winkelwagen en menu
+  - fonts en icons linken + in de map doen
 
 </details>
 
@@ -158,7 +158,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  In week 2 had ik vooral vragen over waarom sommige dingen niet goed waren gecentreerd. Ik maakte fouten omdat ik 
+  een display flex zette op de image ipv de container. Ook had ik vragen over mijn navigatie dat van kleur verandert 
+  wanneer deze omlaag gaat. Hiervoor heb ik een codepen gekregen. 
 
 
   ### Agenda voor meeting
@@ -172,12 +174,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - container stylen
+  - js gebruiken voor header
+  - js gebruiken voor menu
+  - een summary maken
 
 </details>
 
@@ -191,30 +192,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ik kwam erachter dat mijn site redelijk toegankelijk is. Wanneer ik tab begint het ook echt bij de navigatie en 
+  kan ik door mijn menu heen tabben en zo door mijn hele navigatie. Wel kwam ik erachter dat de tab de h1,2 etc. overslaat.
+  Ook heb ik geen shortcuts (aria).
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Tijdens dat ik mijn screenreader gebruikte kwam ik erachter dat de winkelwagen icon aangegeven werd met '?', dit kan 
+  verbeterd worden met een aria label. 
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik kon goed navigeren met enter, tab en shift. Dit was top. Ondanks de beperking, lukte het alsnog goed om de site te gebruiken.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  #### Visueel (brillen, contrast, kleurenblind, dark/light)
+  Wanneer het beeld zwart/wit werd kon ik alles goed gebruiken. Omdat het contrast qua kleuren best hoog was, viel niks weg en kon ik alles nog goed gebruiken. 
+  Toen ik eenmaal blur gebruikte kon ik nog steeds alles goed gebruiken alleen de plaatjes kon ik niet meer helemaal goed zien. Dit was jammer maar niet cruciaal. 
 
 </details>
 
@@ -228,7 +220,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik had nogal moeite met dingen responsive maken. Dit stond centraal deze week. 
 
 
   ### Agenda voor meeting
@@ -242,12 +234,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - mediaquery's gebruiken
+  - mediaquery's onderaan de css plaatsen
+  - css variabelen gebruiken
 
 </details>
 

@@ -8,6 +8,12 @@
 	
 	<title>Home | Het Koekemannetje</title>
 	
+	<!--icons van: https://fontawesome.com/download-->
+	<link href="../basiswebsite/styles/fontawesome.css" rel="stylesheet">
+	<link href="../basiswebsite/styles/brands.css" rel="stylesheet">
+	<link href="../basiswebsite/styles/solid.css" rel="stylesheet">
+
+
 	<link href="styles.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/logo.webp">
 </head>
@@ -17,73 +23,82 @@
 	<header>
 		<nav>
 			<ul>
-				<li>Menu</li>
-				<li><img src="images/text-logo@2x..png" alt=""></li>
-				<li><button>Bestel nu</button></li>
-				<li>Winkelwagen</li>
+	<!--bron aria labels voor icons: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label-->
+				<li><button aria-label="menu"><i class="fa-solid fa-bars"></i></button></li>
+	<!-- bron foldable menu: https://codepen.io/robertspier/pen/PoeJpVO-->
+				<li><ul class="main-nav">
+					<li><a href="#">ONS VERHAAL</a></li>
+					<li><a href="#">DUURZAAMHEID</a></li>
+					<li><a href="#">ONZE KOEKEN</a></li>
+					<li><a href="#">HET REUZENRADJE</a></li>
+					<li><a href="#">ZAKELIJK</a></li>
+				</ul></li>
+				<li class="logo"><a href="../basiswebsite/index.html"><h1>HET KOEKEMANNETJE</h1></a></li>
+				<li><a href="../basiswebsite/bestel.html"><button class="bestel-button">Bestel nu</button></a>
+					<!-- code van https://codepen.io/shooft/pen/rNdqQdO */ -->
+					<a href="../basiswebsite/bestel.html"><i aria-label="winkelwagen"class="fa-solid fa-cart-shopping"></i><span>0</span></li></a>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main class="home">
+	<!-- alle images van het koekemannetje zelf-->
 		<section>
-			<img src="images/IMG_8777.jpeg" alt="Het koekemannetje koektrommel">
-			<h1>Het lekkerste koekje van eigen deeg</h1>
+			<h1>HET LEKKERSTE KOEKJE VAN EIGEN DEEG</h1>
 			<p>Bezorgd door heel Nederland en Belgie</p>
-			<button>BESTEL NU</button>
+			<a href="../basiswebsite/bestel.html"><button>BESTEL NU</button></a>
 		</section>
 
 		<section>
 			<h2>Onze koekjes worden elke dag vers met de hand gemaakt en op de gram gewogen.</h2>
 		</section>
 
+
 		<section>
-			<h3>Vul je eigen koektrommel</h3>
+			<h2>Vul je eigen koektrommel</h2>
 			<p>Het leukste cadeau voor jezelf of iemand anders</p>
 			<button>BESTEL NU</button>
 		</section>
 
 		<section>
-			<h3>Onze koeken</h3>
+			<h2>Onze koeken</h2>
 			<ul>
 				<li>
 					<img src="images/melk.webp" alt="koekje melk chocolade">
-					<h4>MELK CHOCOLADE</h4>
+					<h3>MELK CHOCOLADE</h3>
 				</li>
 				<li>
 					<img src="images/puur.webp" alt="koekje pure chocolade">
-					<h4>PURE CHOCOLADE</h4>
+					<h3>PURE CHOCOLADE</h3>
 				</li>
 				<li>
 					<img src="images/wit.webp" alt="koekje witte chocolade">
-					<h4>WITTE CHOCOLADE</h4>
+					<h3>WITTE CHOCOLADE</h3>
 				</li>
 				<li>
 					<img src="images/witmac.webp" alt="koekje witte chocolade met macadamia">
-					<h4>WITTE CHOCOLADE MET MACADAMIA</h4>
+					<h3>WITTE CHOCOLADE MET MACADAMIA</h3>
 				</li>
-				<li>
+				<li class="maandkoekje">
 					<p>Koekje van de maand</p>
 					<img src="images/vdmaand.webp" alt="koekje van de maand: brownie">
-					<h4>BROWNIE</h4>
+					<h3>BROWNIE</h3>
 				</li>
-				<li>
+				<li class="maandkoekje">
 					<p>Koekje van de maand</p>
-					<img src="images/vdmaand2.webp" alt="koekje van de maand: witte chocolade met framboos">
-					<h4>WITTE CHOCOLADE MET FRAMBOOS</h4>
+					<img src="images/koekjevierkant.jpg" alt="koekje van de maand: witte chocolade met framboos">
+					<h3>WITTE CHOCOLADE MET FRAMBOOS</h3>
 				</li>
 			</ul>
 		</section>
-
-			<img src="images/koekjebinnen.webp" alt="Het koekemannetje koeken van binnen">
 
 		<section>
 			<img src="images/logo.webp" alt="Het koekemannetje logo">
 			<p>Wij doen er alles aan om jou het meest onweerstaanbare koekje te geven. 
 				Om dit te kunnen waarmaken produceren wij elke ochtend vers deeg in onze 
-				eigen winkel. Elk koekje wordt met de hand gemaakt en op de gram gewogen. 
-				Ze zijn gemaakt van bloem van eigen bodem en de hoogste kwaliteit Belgische chocolade.</p>
-			<p>Daarnaast zijn onze producten 100% natuurlijk en maken we geen gebruik van kunstmatige 
+				eigen winkel. Elk koekje wordt met de hand gemaakt en op de gram gewogen.</p>
+			<p>>Ze zijn gemaakt van bloem van eigen bodem en de hoogste kwaliteit Belgische chocolade.
+			Daarnaast zijn onze producten 100% natuurlijk en maken we geen gebruik van kunstmatige 
 				geur-, kleur- en smaakstoffen. Voeg hier onze eigen Amsterdamse liefde aan toe en wij 
 				hebben wat jij wilt!</p>
 		</section>
@@ -102,22 +117,151 @@
 			<button>Bekijk ons op instagram</button>
 		</section>
 
+
 		<section>
-			<h3>Contact</h3>
-			<h5>Locatie</h5>
-			<p>Runstraat 3 1016 GJ Amsterdam</p>
-			<h5>Openingstijden</h5>
-			<p>Elke dag geopend van 10:30 tot 18:30</p>
-			<h5>Wil je ons iets vragen?</h5>
-			<p>mail: info@hetkoekemannetje.nl</p>
-			<p>tel: 020-775 05 10</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0879873245694!2d4.881805415751028!3d52.3688245551742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e52df9fc35%3A0x39b26a518b683b76!2sBanketbakkerij%20Het%20Koekemannetje!5e0!3m2!1snl!2snl!4v1662994613730!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<section>
+				<h2>Contact</h2>
+				<h3>Locatie</h3>
+				<p>Runstraat 3 1016 GJ Amsterdam</p>
+				<h3>Openingstijden</h3>
+				<p>Elke dag geopend van 10:30 tot 18:30</p>
+				<h3>Wil je ons iets vragen?</h3>
+				<p>mail: info@hetkoekemannetje.nl</p>
+				<p>tel: 020-775 05 10</p>
+			</section>
+		
+	
+			<section>
+				<!-- iframe via google maps -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.0879873245694!2d4.881805415751028!3d52.3688245551742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e52df9fc35%3A0x39b26a518b683b76!2sBanketbakkerij%20Het%20Koekemannetje!5e0!3m2!1snl!2snl!4v1662994613730!5m2!1snl!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>	
+		</section>
+
+
+		<section>
+			<h2>Vul je eigen koektrommel</h2>
+			<p>Het leukste cadeau voor jezelf of iemand anders</p>
+			<button>BESTEL NU</button>
 		</section>
 
 		<section>
-			<h3>Vul je eigen koektrommel</h3>
-			<p>Het leukste cadeau voor jezelf of iemand anders</p>
-			<button>BESTEL NU</button>
+			<h2>Veelgestelde vragen</h2>
+			<details>
+			<!-- bron summary: https://codepen.io/robertspier/pen/NWMapEM-->
+				<summary>Ik heb een fout gemaakt in mijn bestelling, wat nu?</summary>
+					<ul>
+						<li>Geen paniek. Mocht je je bestelling willen wijzigen, neem dan zo snel mogelijk contact met ons op. 
+							Dit kan door te bellen naar onze winkel 020-7750510 of stuur een e-mail naar info@hetkoekemannetje.nl.</li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Kan ik ook een bestelling plaatsen om af te halen?</summary>
+					<ul>
+						<li>De webshop is vooral bedoeld voor mensen die niet naar de winkel kunnen komen en toch van onze koekjes 
+							willen genieten. Voor het afhalen van onze koekjes hoef je dan ook geen bestelling te plaatsen. Onze 
+							winkel is elke dag geopend van 10:30 tot 18:30 en we bakken de hele dag door verse koekjes.  
+						<br><br>Onze verjaardags- en hartjeskoeken moeten wel via de webshop besteld worden voor afhalen, 
+						omdat wij deze alleen op bestelling maken.  
+						<br><br>Heb jij een grote bestelling? Dan is het natuurlijk fijn als wij dit vooraf weten. Je kan dan bellen 
+						naar 020-7750510 of mailen naar info@hetkoekemannetje.nl, dan zorgen wij dat de koekjes op het gewenste 
+						tijdstip voor je klaarstaan! </li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Op welke dagen verzenden jullie?</summary>
+					<ul>
+						<li>Op dit moment verzenden wij van maandag t/m donderdag. Je hebt de koekjes in principe 1 dag na de 
+							verzenddatum in huis.</li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Hoe werkt de verzending en bezorging bij jullie?</summary>
+					<ul>
+						<li>Als je vandaag vóór 16:00 besteld, verzenden we jouw koekjes indien gewenst de volgende dag 
+							(afhankelijk van de geselecteerde verzenddatum). Bij het bestellen in de webshop kan je de gewenste 
+							verzenddatum kiezen. Bezorging op zondag en maandag is niet mogelijk.
+							<br><br>Wij werken samen met DHL om de koekjes bij jullie te bezorgen. In 98% van de gevallen leveren 
+							zij de koekjes de dag na de verzenddatum. Helaas komt vertraging vanuit DHL soms ook voor. Wij 
+							hebben hier geen invloed op en kunnen daarom geen bezorgdatum 100% garanderen. Als je de koeken 
+							echt op een specifieke tijd en dag nodig hebt, raden wij aan een extra dag eerder als verzenddatum 
+							te kiezen</li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Waarom kies ik een verzenddatum in plaats van een bezorgdatum?</summary>
+					<ul>
+						<li>Wij werken samen met DHL om de koekjes zo snel mogelijk bij jou thuis te bezorgen. In principe heb 
+							je de koekjes de volgende dag in huis. Bij extreme drukte of andere onvoorziene redenen kan het 
+							voorkomen dat de bestelling vertraging oploopt in het sorteercentrum. Omdat wij dit zelf niet in de 
+							hand hebben kiezen wij ervoor om een verzenddatum te kiezen. Wij kunnen je dan ook de zekerheid geven 
+							dat we de koekjes op de gekozen verzenddatum bakken en meegeven aan DHL.
+							<br><br>In principe worden de koekjes de volgende dag tussen 08:00 en 19:00 bezorgd.  </li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Hoe kan ik de koekjes het beste bewaren?</summary>
+					<ul>
+						<li>De koekjes blijven het lekkerste in onze koektrommel of een andere luchtdichte verpakking buiten de 
+							koeling. Wil je de koekjes langer dan 5 dagen bewaren? In de vriezer blijven de koekjes tenminste 2 
+							maanden goed.  </li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Hoelang blijven de koekjes vers?</summary>
+					<ul>
+						<li>Onze koekjes zijn tenminste 5 dagen houdbaar. Als je de koekjes lang bewaart raden wij het aan om de 
+							koekjes op te warmen. Leg de koekjes dan 2 minuten in de oven op 180°C. Laat de koekjes vervolgens 4 
+							minuten rusten. In de vriezer blijven de koekjes tenminste 2 maanden goed. 
+						<br><br>Let op: leg de koekjes niet op een rooster, omdat ze dan uit elkaar kunnen vallen. </li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Welke allergenen bevatten de koekjes?</summary>
+					<ul>
+						<li>OEI: Al onze koekjes bevatten ei. <br>
+							GLUTEN: Al onze koekjes bevatten gluten. Wij hebben op dit moment helaas geen glutenvrije opties.<br>
+							LACTOSE: Wij werken met witte-, melk- en pure chocolade in al onze koekjes. Deze chocolade bevat 
+							lactose. Wij hebben geen lactosevrije opties.<br>  
+							NOTEN: Het witte chocolade macadamia-, hazelnoot- en pepernoot koekje bevatten noten. Wij werken 
+							met noten in onze winkel, waardoor de andere koekjes wel sporen van noten bevatten.<br><br>
+							Voor andere vragen over de ingrediënten van onze koekjes, kunt u een e-mail sturen naar 
+							info@hetkoekemannetje.nl.<br><br>
+							Al onze koekjes zijn veilig om te eten als je zwanger bent.
+							Verder gebruiken wij alleen natuurlijke ingrediënten zonder toegevoegde geur-, kleur- en smaakstoffen.   </li>
+					</ul>
+					<hr>
+			</details>
+				
+			<details>
+				<summary>Zakelijk</summary>
+					<ul>
+						<li>Buiten dat onze koekjes leuk en lekker zijn om cadeau te doen aan vrienden of familie, zijn onze 
+							koekendozen en trommels ook een origineel relatiegeschenk. Bijvoorbeeld voor jarige collega’s of 
+							als bedankje na samenwerkingen. We kunnen een bijpassende gepersonaliseerde boodschap meesturen in 
+							de trommels. Voor grote bestellingen kan je dan ook altijd contact met ons opnemen! Meer weten over 
+							de mogelijkheden? Klik hier of stuur ons een e-mail naar zakelijk@hetkoekemannetje.nl.</li>
+					</ul>
+					<hr>
+			</details>
+				
+
+
+			<h2>Staat uw vraag er niet bij</h2>
+			<button>Neem contact met ons op</button>
 		</section>
 
 	</main>
@@ -125,12 +269,12 @@
 	<footer>
 		<img src="images/logo.webp" alt="Het koekemannetje logo">
 		<ul>
-			<li>Home</li>
-			<li>Bestellen</li>
-			<li>Contact</li>
-			<li>Veelgestelde vragen</li>
-			<li>Privacy</li>
-			<li>Algemene voorwaarden</li>
+			<li><a href="#">Home</li></a>
+			<li><a href="#">Bestellen</li></a>
+			<li><a href="#">Contact</li></a>
+			<li><a href="#">Veelgestelde vragen</li></a>
+			<li><a href="#">Privacy</li></a>
+			<li><a href="#">Algemene voorwaarden</li></a>
 		</ul>
 	</footer>
 	
