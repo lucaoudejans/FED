@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Home | Het Koekemannetje</title>
+	
+	<!--icons van: https://fontawesome.com/download-->
+	<link href="../basiswebsite/styles/fontawesome.css" rel="stylesheet">
+	<link href="../basiswebsite/styles/brands.css" rel="stylesheet">
+	<link href="../basiswebsite/styles/solid.css" rel="stylesheet">
+
+
+	<link href="styles.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/logo.webp">
+</head>
+<body class="bestel">
+
+    <header>
+		<nav>
+			<ul>
+	<!--bron aria labels voor icons: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label-->
+				<li>
+                    <a href="../basiswebsite/index.html"><i class="fa fa-home" aria-label="home"></i></a>
+                    <button aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+                </li>
+				<li><ul class="main-nav">
+					<li><a href="#">ONS VERHAAL</a></li>
+					<li><a href="#">DUURZAAMHEID</a></li>
+					<li><a href="#">ONZE KOEKEN</a></li>
+					<li><a href="#">HET REUZENRADJE</a></li>
+					<li><a href="#">ZAKELIJK</a></li>
+				</ul></li>
+				<li class="logo"><a href="../basiswebsite/index.html"><h1>HET KOEKEMANNETJE</h1></a></li>
+				<li><a href="../basiswebsite/bestel.html"><button class="bestel-button">Bestel nu</button></a>
+					<!-- code van https://codepen.io/shooft/pen/rNdqQdO */ -->
+					<a href="../basiswebsite/bestel.html"><i aria-label="winkelwagen"class="fa-solid fa-cart-shopping"></i><span>0</span></li></a>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+        <h1>Onze producten</h1>
+
+        <ul>
+            <li>
+                <img src="images/koektrommel.webp" alt="">
+                <h2>Koektrommel met 12 koekjes</h2>
+                <h3>€22,95</h3>
+            </li>
+
+            <li>
+                <img src="images/koektrommel.webp" alt="">
+                <h2>Koektrommel met 10 koekjes</h2>
+                <h3>€19,50</h3>
+            </li>
+
+            <li>
+                <img src="images/verjaardagskoek.webp" alt="">
+                <h2>Verjaardagskoek</h2>
+                <h3>€15,50</h3>
+            </li>
+
+            <li>
+                <img src="images/hartkoek.webp" alt="">
+                <h2>Hartjeskoek</h2>
+                <h3>€15,50</h3>
+            </li>
+
+            <li>
+                <img src="images/koekdoos.webp" alt="">
+                <h2>Koekendoos met 10 koekjes</h2>
+                <h3>€15,60</h3>
+            </li>
+
+            <li>
+                <img src="images/rozetrui.webp" alt="">
+                <h2>Roze Hoodie Het Koekemannetje</h2>
+                <h3>€49,95</h3>
+            </li>
+
+            <li>
+                <img src="images/groenetrui.webp" alt="">
+                <h2>Groene Hoodie Het Koekemannetje</h2>
+                <h3>€49,95</h3>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+		<img src="images/logo.webp" alt="Het koekemannetje logo">
+		<ul>
+			<li>Home</li>
+			<li>Bestellen</li>
+			<li>Contact</li>
+			<li>Veelgestelde vragen</li>
+			<li>Privacy</li>
+			<li>Algemene voorwaarden</li>
+		</ul>
+	</footer>
+	
+	<script defer src="scripts/script.js"></script>
+    
+</body>
+</html>
