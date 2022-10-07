@@ -34,9 +34,9 @@ button{
 @font-face {
     font-family: 'Tafel Sans Pro';
     src: local('Tafel Sans Pro Regular'), local('Tafel-Sans-Pro-Regular'),
-        url('../basiswebsite/webfonts/TafelSansPro-Regular.woff2') format('woff2'),
-        url('../basiswebsite/webfonts/TafelSansPro-Regular.woff') format('woff'),
-        url('../basiswebsite/webfonts/TafelSansPro-Regular.ttf') format('truetype');
+        url('../webfonts/TafelSansPro-Regular.woff2') format('woff2'),
+        url('../webfonts/TafelSansPro-Regular.woff') format('woff'),
+        url('../webfonts/TafelSansPro-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
@@ -44,9 +44,9 @@ button{
   @font-face {
     font-family: 'Tafel Sans Pro Light';
     src: local('Tafel Sans Pro Light'), local('Tafel-Sans-Pro-Light'),
-        url('../basiswebsite/webfonts/TafelSansPro-Light.woff2') format('woff2'),
-        url('../basiswebsite/webfonts/TafelSansPro-Light.woff') format('woff'),
-        url('../basiswebsite/webfonts/TafelSansPro-Light.ttf') format('truetype');
+        url('../webfonts/TafelSansPro-Light.woff2') format('woff2'),
+        url('../webfonts/TafelSansPro-Light.woff') format('woff'),
+        url('../webfonts/TafelSansPro-Light.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
@@ -168,7 +168,7 @@ nav span {
 .home section:nth-of-type(1){
     height: 70vh;
     display: flex;
-    background-image: url(images/achtergrond.webp);
+    background-image: url('../images/achtergrond.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -187,7 +187,7 @@ nav span {
     padding: 1em;
 }
 
-.home section:nth-of-type(1) button{
+.home section:nth-of-type(1) a{
     text-align: center;
     color: var(--color);
     font-size: 1.125em;
@@ -269,6 +269,10 @@ nav span {
 
 .home section:nth-of-type(4) img{
     width: 100%;
+}
+
+.home section:nth-of-type(4) img:hover{
+    opacity: 0.5;
 }
 
 .home section:nth-of-type(4) h2{
@@ -353,6 +357,10 @@ nav span {
 .home section:nth-of-type(6) img{
     max-width: 100%;
     aspect-ratio: 1/1;
+}
+
+.home section:nth-of-type(6) img:hover{
+    opacity: 0.5;
 }
 
 .home section:nth-of-type(6) button{
@@ -533,16 +541,51 @@ nav span {
 }
 
 /* code voor de bestel main*/
-main .bestel{
-    top: var(--header-height);
-}
+
+
+.bestel main {
+    padding-top: 5em;
+    background-color: #f6f6f6;
+ }
 
 .bestel main ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f6f6f6;
     gap: 2em;
+    cursor: pointer;
+    padding-bottom: 4em;
+}
+
+.bestel main h1{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2em;
+}
+
+.bestel main h2{
+    font-family: Lato;
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.3em;
+}
+
+.bestel main h3{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1em;
+    color: grey;
+}
+
+.bestel main img{
+    max-width: 400px;
+}
+
+.bestel main img:hover{
+    opacity: 0.5;
 }
 
 /* code voor de footer */    
@@ -555,7 +598,7 @@ footer{
 }
 
 footer img{
-    width: 60%;
+    width: 50%;
     padding-top: 4em;
     padding-bottom: 2em;
 }
@@ -576,7 +619,7 @@ footer ul{
 
 
 /* button weghalen wanneer het een mobiel scherm heeft */
-@media (max-width:31em) {
+@media (max-width:34em) {
     .bestel-button{
       display: none;
     }
@@ -682,7 +725,6 @@ footer ul{
 
         .home section:nth-of-type(9){
             display: grid;
-            grid-template-columns: 80% 20;
             grid-template-columns: 50%;
         }
 
@@ -698,15 +740,21 @@ footer ul{
             width: 50%;
         }
 
+
+        /* code voor de bestel main*/
         .bestel main ul{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 1.5em;
-            padding: 1em;
+            padding: 1.5em;
+        }
+
+        .bestel main h1{
+            padding-bottom: 0;
         }
 
         footer img{
-            width: 30%;
+            width: 25%;
             padding-top: 2em;
             padding-bottom: 1em;
         }
@@ -728,6 +776,19 @@ footer ul{
         }
 
         header .logo{
-    margin-left: -22em;
-}
+        margin-left: -22em;
+        }   
+
+        footer img{
+            width: 20%;
+        }
+
+        /* code voor de bestel main*/
+
+        .bestel main ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5em;
+            padding: 5em;
+        }
     }
