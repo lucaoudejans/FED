@@ -168,7 +168,7 @@ nav span {
 .home section:nth-of-type(1){
     height: 70vh;
     display: flex;
-    background-image: url('../images/achtergrond.webp');
+    background-image: url('./images/achtergrond.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -506,12 +506,6 @@ nav span {
     font-size: 0.8em;
     color: grey;
     padding-bottom: 1em;
-}
-
-.home details hr{
-    margin-left: 1em;
-    margin-right: 1em;
-    border: solid 1px #f6f6f6;
 }
 
 .home section:nth-of-type(9) h2{
