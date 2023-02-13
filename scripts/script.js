@@ -7,7 +7,7 @@ window.addEventListener('scroll', onScroll);
 
 /* maakt een functie aan wanneer de y as verplaatst */    
 function onScroll() {
-	console.log(window.scrollY)
+	console.log(window.scrollY);
 
 /* wanneer er verder is gescrolled dan 75px */    
     if(window.scrollY > 75) {
