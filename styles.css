@@ -363,7 +363,7 @@ nav span {
     opacity: 0.5;
 }
 
-.home section:nth-of-type(6) button{
+.home section:nth-of-type(6) a{
     text-align: center;
     color: var(--color);
     font-size: 0.8em;
