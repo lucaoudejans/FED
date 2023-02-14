@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tafel Sans Pro';
+    src: local('Tafel Sans Pro Regular'), local('Tafel-Sans-Pro-Regular'),
+        url('TafelSansPro-Regular.woff2') format('woff2'),
+        url('TafelSansPro-Regular.woff') format('woff'),
+        url('TafelSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
