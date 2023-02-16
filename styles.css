@@ -355,10 +355,10 @@ nav span {
 }
 
 .home section:nth-of-type(6) img{
-    max-width: 100%;
+    width: 100%;
     aspect-ratio: 1/1;
 }
-
+ 
 .home section:nth-of-type(6) img:hover{
     opacity: 0.5;
 }
